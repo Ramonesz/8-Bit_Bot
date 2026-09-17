@@ -1,0 +1,19 @@
+# Arquivo de referência do servidor
+# Mantenha este arquivo apenas como exemplo local.
+# Nunca publique IDs reais de canais, cargos ou mensagens.
+
+# Estrutura sugerida:
+# canal_boas_vindas: SEU_ID_CANAL_BOAS_VINDAS
+# canal_chat: SEU_ID_CANAL_CHAT
+# canal_regras: SEU_ID_CANAL_REGRAS
+# canal_loja: SEU_ID_CANAL_LOJA
+# canal_campeonato: SEU_ID_CANAL_CAMPEONATO
+# canal_oficializar: SEU_ID_CANAL_OFICIALIZAR
+# cargo_staff: SEU_ID_CARGO_STAFF
+# cargo_owner: SEU_ID_CARGO_OWNER
+# cargo_membro: SEU_ID_CARGO_MEMBRO
+
+# Exemplo de uso local:
+# - canal_loja = 123456789012345678
+# - cargo_staff = 123456789012345678
+# - cargo_owner = 123456789012345678

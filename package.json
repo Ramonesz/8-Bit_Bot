@@ -1,0 +1,23 @@
+{
+  "name": "8-bitbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "publicar:time": "node tools/publicar-oficializar-time.js",
+    "publicar:loja": "node tools/publicar-loja.js",
+    "check": "node --check index.js && node --check src/core/bot.js && node --check src/config/env.js && node --check src/core/client.js && node --check src/core/instance-lock.js && node --check src/core/logger.js && node --check src/core/startup.js && node --check src/features/commands.js && node --check tools/publicar-oficializar-time.js && node --check tools/publicar-loja.js",
+    "test": "npm run check"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@discordjs/voice": "^0.19.2",
+    "discord.js": "^14.27.0",
+    "dotenv": "^17.4.2"
+  }
+}
