@@ -1,99 +1,104 @@
 # 8-Bit Bot
 
-Esse é um bot de Discord que eu fiz pra ajudar num servidor com várias coisas do dia a dia: moderação, loja, ranking, staff, eventos e algumas automações básicas.
+A lightweight Discord bot built to help manage community activity, automate routine tasks, and keep a server organized without needing everything to be done manually.
 
-Ele foi pensado pra deixar o trabalho mais rápido e menos manual, sem depender que tudo seja feito à mão.
+It combines moderation, VIP rewards, rankings, events, calls, and internal tools in one place, making it useful for active servers that need more control and less repetitive work.
 
-## O que ele faz
+## Overview
 
-- dá boas-vindas e coloca cargos automaticamente
-- gerencia loja VIP e benefícios por tempo
-- controla gemas, doações e ranking
-- ajuda com campeonato e inscrição de times
-- mostra perfil, horas em call e mensagens
-- faz moderação com mute, ban e limpeza
-- detecta spam, convites e termos bloqueados
-- cria e administra calls temporárias
-- gera mensagens prontas para eventos e loja
+The 8-Bit Bot was designed for communities with a lot of interaction, where moderation, rewards, and day-to-day server maintenance can quickly become time-consuming. Instead of handling everything manually, the bot centralizes key functions and keeps operations smoother and more consistent.
 
-## Comandos principais
+### Included systems
 
-- `/clear` — limpa mensagens do canal
-- `/ofctime` — atualiza o placar do campeonato
-- `/mute` — aplica mute temporário
-- `/ban` — bane um usuário
-- `/perfil` — mostra informações do usuário
-- `/status` — mostra estatísticas do servidor
-- `/rec` — aprova alguém pra staff
-- `/bau` — abre o baú e ganha gemas
-- `/give` e `/remove` — gerencia gemas
-- `/set` — define cargo da loja
-- `/cargovip` — vê benefícios do VIP
-- `/buy` — compra cargo
-- `/top` — mostra ranking
-- `/doar` — doa gemas
-- `/gema` — vê saldo
+- moderation and punishments
+- VIP store and paid benefits
+- economy with gems and rewards
+- member stats and rankings
+- championship and team support
+- event and call organization
+- automatic welcome flow and role handling
 
-## Como rodar localmente
+## Features
 
-1. Instale as dependências:
+- automatic welcome messages and role assignment
+- VIP shop with temporary benefits
+- gem economy with donation and balance tools
+- user profile with call hours and activity stats
+- moderation tools like mute, ban, and message cleanup
+- spam, invite, and blocked-word detection
+- temporary call management
+- ready-to-use messages for events and promotions
+- staff tools for server administration
+
+### Main commands
+
+- `/clear` — delete messages from a channel
+- `/ofctime` — update championship scoreboard
+- `/mute` — apply a temporary timeout
+- `/ban` — ban a user
+- `/perfil` — show user info and stats
+- `/status` — display server-wide activity summary
+- `/rec` — approve a user for staff
+- `/bau` — open the reward chest and earn gems
+- `/give` and `/remove` — manage gem balances
+- `/set` — assign a store role
+- `/cargovip` — view VIP benefits
+- `/buy` — purchase a role for a period of time
+- `/top` — display rankings
+- `/doar` — donate gems
+- `/gema` — check the current balance
+
+## Setup
+
+### 1. Install dependencies
 
 ```bash
 npm install
 ```
 
-2. Crie um arquivo `.env` a partir do exemplo:
+### 2. Create the environment file
 
 ```bash
 cp .env.example .env
 ```
 
-3. Preencha com o token do seu bot do Discord:
+Then add your Discord bot token:
 
 ```env
 TOKEN=seu_token_do_discord
 ```
 
-4. Inicie o projeto:
+### 3. Run the bot
 
 ```bash
 npm start
 ```
 
-Se quiser testar sem abrir a aplicação normalmente:
+For development mode:
 
 ```bash
 npm run dev
 ```
 
-## Verificação rápida
+### 4. Quick verification
 
 ```bash
 npm test
 ```
 
-## Estrutura do projeto
+## Project structure
 
-- `index.js` — ponto de entrada
-- `src/config/env.js` — leitura do `.env`
-- `src/core/bot.js` — lógica principal do bot
-- `src/core/client.js` — configuração do cliente Discord
-- `src/core/startup.js` — login do bot
-- `src/features/commands.js` — comandos Slash
-- `config/constantes.js` — IDs e configurações do servidor
-- `tools/` — scripts auxiliares
-- `assets/` — imagens e banners
-- `data/` — estado do bot
+- `index.js` — app entry point
+- `src/config/env.js` — reads the environment variables
+- `src/core/bot.js` — main bot logic
+- `src/core/client.js` — Discord client setup
+- `src/core/startup.js` — bot login flow
+- `src/features/commands.js` — slash commands
+- `config/constantes.js` — server configuration and IDs
+- `tools/` — helper scripts
+- `assets/` — images and banners
+- `data/` — persistent bot state
 
-## Aviso importante
+## License
 
-Esse projeto usa IDs reais de canais, cargos e mensagens do Discord, então antes de subir no GitHub é importante:
-
-- remover o arquivo `.env`
-- apagar dados locais de usuários e estatísticas
-- trocar IDs reais por placeholders
-- revisar o README antes de publicar
-
-## Licença
-
-Esse código foi feito pra uso pessoal e do servidor em que foi criado. Se quiser reutilizar, vale adaptar com cuidado e respeitar as regras do ambiente em que vai rodar.
+This project was created for personal use and for the server environment it was built for. If reused, it should be adapted carefully and used in a way that respects the rules of the community or server where it is running.
